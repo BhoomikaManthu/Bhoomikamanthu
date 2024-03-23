@@ -58,6 +58,9 @@ nav ul li a:hover::after{
 .header-text{
     margin-top: 20%;
     font-size: 30px;
+a:visited{
+    color:white;
+}
 }
 .header-text h1{
     font-size: 60px;
@@ -97,9 +100,10 @@ nav ul li a:hover::after{
 .tab-titles{
     display: flex;
     margin: 20px 0 40px;
+
 }
 .tab-links{
-    margin-right: 50px;
+    margin-right: -25px;
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
@@ -109,10 +113,9 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
     position: absolute;
     left: 0;
-    bottom: -8px;
+    bottom: 110px;
     transition: 0.5s;
 }
 
@@ -301,6 +304,68 @@ form .btn2{
     margin-top: 30px;
     display: flex;
 }
+.parag{
+    text-align: justify;
+}
+.Button1 .button2 {
+    color: aliceblue;
+    background-color: #080808;
+    padding: 10px;
+    border: 1px solid #ff004f;
+    border-radius: 4px;
+    transition: background-color ease-in 2s;
+}
+.Button1 > .button2:hover{
+    background-color: #ff004f;
+}
+.About-me::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+  
+  .About-me:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .About-me::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background:#c40240;
+    z-index: -1;
+    transition: transform .3s ease;
+    border-radius: 7px;
+    opacity: 0.6;
+
+  }
+  
+  .About-me {
+    position: relative;
+  }
+  
+  html {
+    block-size: 100%;
+    inline-size: 100%;
+  }
+  
+  .About-me{
+    min-block-size: 100%;
+    min-inline-size: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    display: grid;
+    place-content: center;
+    font-family: system-ui, sans-serif;
+  }
+  
+  @media (orientation: landscape) {
+    body {
+      grid-auto-flow: column;
+    }
+  }
 
     
 
